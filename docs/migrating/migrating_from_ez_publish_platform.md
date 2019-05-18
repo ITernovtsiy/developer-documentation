@@ -14,15 +14,19 @@ An upgrade from eZ Publish Platform 5.4.x (Enterprise edition) or 2014.11 (Commu
 2. You can then proceed with consecutive upgrades to further versions, covered on [v1.13 LTS an 2.5LTS](releases/updating_ez_platform.md).
     - Migrate eZ Landing page to eZ Page Builder
     - Migrate XmlText to RichText
-    - Optional; If you added legacy bridge in step 1, you can now remove that and xmltext package 
+    - Optional; If you added legacy bridge in step 1, you can now remove that and xmltext package
+    
+!!! tip
+
+    Work is being done to simplify this further to not have to upgrade via 1.13LTS, eta on that is Summer 2019. However all the tools needed to bring you from 4.x and 5.x to Platform, with or withouth legacy bridge, already exists so you can safly conser it ready for use already.
 
 !!! caution "Things to be aware of when planning a migration"
 
     1. While the instructions below are fully supported, we are aware that the community, partners and customers come from a wide range of different versions of eZ Publish, some with issues that do not surface before attempting a migration. That's why we and the community are actively gathering feedback on Slack and/or support channels for Enterprise customers to gradually improve the migration scripts and instructions. Reach out before you start so others who have done this before you can support you.
 
-    1. Legacy Bridge is a supported option for 1.13LTS and future 2.5LTS series. This means you can plan for a more gradual migration if you want, just like you could on eZ Publish Platform 5.x, with a more feature-rich version of eZ Platform and (with 2.x) also more recent version of Symfony. This is a great option for those who want the latest features and are comfortable with more frequent releases. The downside is a more complex setup to develop and maintian, and the migration might take much longer doing this approach. 
+    2. "Hybrid setup" using Legacy Bridge is a supported option for 1.13LTS and 2.5LTS series. This means you can plan for a more gradual migration if you want, just like you could on eZ Publish Platform 5.x, with a more feature-mature version of eZ Platform, Symfony and even Legacy bridge itself. This is a great option for those who want the latest features. The downside is a more complex setup to develop and maintian, given you run two systems in paralell, and the overall migration might take much longer doing using an iterative/gradual approach. 
 
-    1. Additionally there are some other topics to be aware of for the code migration from eZ Publish to eZ Platform:
+    3. Additionally there are some other topics to be aware of for the code migration from eZ Publish to eZ Platform:
 
         - [Field Types reference](../api/field_type_reference.md) for overview of Field Types that do and don't exist in eZ Platform
         - eZ Platform RichText Field Type capabilities: You'll need v2.5.1 or higher for custom attributes migration support.
