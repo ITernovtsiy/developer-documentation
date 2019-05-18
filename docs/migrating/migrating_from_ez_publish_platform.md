@@ -18,7 +18,7 @@ An upgrade from eZ Publish Platform 5.4.x (Enterprise edition) or 2014.11 (Commu
     
 !!! tip
 
-    Work is being done to simplify this further to not have to upgrade via 1.13LTS, eta on that is Summer 2019. However all the tools needed to bring you from 4.x and 5.x to Platform, with or withouth legacy bridge, already exists so you can safly conser it ready for use already.
+    Work is being done to simplify this further to not have to upgrade via 1.13LTS, eta on that is Summer 2019. However all the tools needed to bring you from 4.x and 5.x to Platform, with or withouth legacy bridge, already exists so you can safly consider it ready for use already.
 
 !!! caution "Things to be aware of when planning a migration"
 
