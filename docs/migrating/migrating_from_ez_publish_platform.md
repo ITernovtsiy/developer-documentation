@@ -8,17 +8,17 @@ eZ Publish Platform (5.x) introduced a new Symfony-based technology stack that c
 
 An upgrade from eZ Publish Platform 5.4.x (Enterprise edition) or 2014.11 (Community edition) to newer versions of eZ Platform must be performed in stages. It can be done in many differnt ways, but a recommended approach is to:
 
-1. Migrate from eZ Publish Platform directly to the v1.13 LTS release _(covered on this page)_.
+1. Migrate from eZ Publish Platform directly to the v1.7 LTS release _(covered on this page)_.
     - Optional; Add legacy bridge to be able to gradual migrate your legacy code if you have it
     - Once ready; Migrate eZ FLow to eZ Landing page
-2. You can then proceed with consecutive upgrades to further versions, covered on [v1.13 LTS an 2.5LTS](releases/updating_ez_platform.md).
+2. You can then proceed with consecutive upgrades to further versions, covered on [v1.7 LTS an 2.5LTS](releases/updating_ez_platform.md).
     - Migrate eZ Landing page to eZ Page Builder
     - Migrate XmlText to RichText
     - Optional; If you added legacy bridge in step 1, you can now remove that and xmltext package
     
 !!! tip
 
-    Work is being done to simplify this further to not have to upgrade via 1.13LTS, eta on that is Summer 2019. However all the tools needed to bring you from 4.x and 5.x to Platform, with or withouth legacy bridge, already exists so you can safly consider it ready for use already.
+    Work is being done to simplify this further to not have to upgrade via 1.7LTS, eta on that is early fall 2019. However all the tools needed to bring you from 4.x and 5.x to Platform, with or withouth legacy bridge, already exists so you can safly consider it ready for use already.
 
 !!! caution "Things to be aware of when planning a migration"
 
@@ -54,7 +54,7 @@ This section describes how to upgrade your existing  eZ Publish Platform  5.4
 
 ## Upgrade steps
 
-### Step 1: Extract latest eZ Platform/Enterprise v1.13.x
+### Step 1: Extract latest eZ Platform/Enterprise v1.7.x
 
 The easiest way to upgrade the distribution files is to extract a clean installation of eZ Platform / eZ Enterprise to a separate directory.
 
@@ -84,7 +84,7 @@ While no longer bundled, the XmlText Field Type still exists and is needed to p
 
 !!! note
 
-    As of v1.3, be aware this XmlText Field Type now uses the Content View system introduced in eZ Platform 1.0, so make sure you adapt custom templates and override rules if you plan to use this for rendering xmltext content _(in Legacy Bridge setup)_.
+    Be aware this XmlText Field Type in eZ Platform uses the Content View system introduced in eZ Platform 1.0, so make sure you adapt custom templates and override rules if you plan to use this for rendering xmltext content _(in Legacy Bridge setup)_.
 
 
 ##### 2.3. Config
